@@ -33,6 +33,9 @@ OldaleTown_Mart_Pokemart_Expanded:
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
 	.2byte ITEM_AWAKENING
+	.2byte ITEM_BLACK_AUGURITE
+	.2byte ITEM_LINKING_CORD
+	.2byte ITEM_PEAT_BLOCK
 	pokemartlistend
 
 OldaleTown_Mart_EventScript_Woman::
