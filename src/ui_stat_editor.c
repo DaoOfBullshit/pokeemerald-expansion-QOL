@@ -918,7 +918,7 @@ static void ChangeAndUpdateStat()
 
 #define STAT_MINIMUM          0  
 #define IV_MAX_SINGLE_STAT    31   
-#define EV_MAX_SINGLE_STAT    255   
+#define EV_MAX_SINGLE_STAT    252   
 #define EV_MAX_TOTAL          510            
                 
 #define EDITING_EVS     0
