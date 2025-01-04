@@ -151,7 +151,7 @@
       "x": 46,
       "y": 6,
       "elevation": 0,
-      "dest_map": "MAP_LITTLEROOT_TOWN",
+      "dest_map": "MAP_LITTLEROOT_TOWN_DEV_HOUSE",
       "dest_warp_id": "0"
     }
   ],
