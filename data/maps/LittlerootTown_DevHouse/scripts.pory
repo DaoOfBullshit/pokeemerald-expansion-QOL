@@ -5,9 +5,20 @@ mapscripts LittlerootTown_DevHouse_MapScripts {
 script LittlerootTown_DevHouse_EVBerry_NPC {
     lock
     faceplayer
-    message("How may I serve you?")
+    message("I am the EV Berry Hoarder. \pWould you like to buy some?")
     waitmessage
     pokemart(LittlerootTown_EVBerry_Mart)
+    msgbox("Please come again.")
+    release
+    end
+}
+
+script LittlerootTown_DevHouse_EvoItem_NPC {
+    lock
+    faceplayer
+    message("I am the Evolution Item Keeper. \pPlease have a look.")
+    waitmessage
+    pokemart(LittlerootTown_EvoItem_Mart)
     msgbox("Please come again.")
     release
     end
@@ -22,6 +33,13 @@ LittlerootTown_EVBerry_Mart:
 	.2byte ITEM_HONDEW_BERRY
     .2byte ITEM_GREPA_BERRY
     .2byte ITEM_TAMATO_BERRY
+	pokemartlistend
+
+    .align 2
+LittlerootTown_EvoItem_Mart:
+	.2byte ITEM_BLACK_AUGURITE
+	.2byte ITEM_LINKING_CORD
+	.2byte ITEM_PEAT_BLOCK
 	pokemartlistend
 
 `
