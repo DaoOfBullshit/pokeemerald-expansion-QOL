@@ -1,0 +1,27 @@
+mapscripts LittlerootTown_DevHouse_MapScripts {
+
+}
+
+script LittlerootTown_DevHouse_EVBerry_NPC {
+    lock
+    faceplayer
+    message("How may I serve you?")
+    waitmessage
+    pokemart(LittlerootTown_EVBerry_Mart)
+    msgbox("Please come again.")
+    release
+    end
+}
+
+raw `
+	.align 2
+LittlerootTown_EVBerry_Mart:
+	.2byte ITEM_POMEG_BERRY
+	.2byte ITEM_KELPSY_BERRY
+	.2byte ITEM_QUALOT_BERRY
+	.2byte ITEM_HONDEW_BERRY
+    .2byte ITEM_GREPA_BERRY
+    .2byte ITEM_TAMATO_BERRY
+	pokemartlistend
+
+`
