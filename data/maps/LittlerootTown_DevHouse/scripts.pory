@@ -46,6 +46,29 @@ script LittlerootTown_DevHouse_AbilityItem_NPC {
     end
 }
 
+script LittlerootTown_DevHouse_PowerItem_NPC {
+    lock
+    faceplayer
+    message("I sell Power Items.")
+    waitmessage
+    pokemart(LittlerootTown_DevHouse_PowerItem_Mart)
+    msgbox("Please come again.")
+    release
+    end
+}
+
+script LittlerootTown_DevHouse_HeartScale_NPC {
+    lock
+    faceplayer
+    message("I sell heart scales.\pYou better stock up!")
+    waitmessage
+    pokemart(LittlerootTown_DevHouse_HeartScale_Mart)
+    msgbox("Please come again.")
+    release
+    end
+}
+
+
 mart LittlerootTown_EVBerry_Mart{
 	ITEM_POMEG_BERRY
 	ITEM_KELPSY_BERRY
@@ -90,4 +113,18 @@ mart LittlerootTown_NatureMint_Mart{
 mart LittlerootTown_AbilityItem_Mart{
     ITEM_ABILITY_CAPSULE
     ITEM_ABILITY_PATCH
+}
+
+mart LittlerootTown_DevHouse_PowerItem_Mart{
+    ITEM_MACHO_BRACE 
+    ITEM_POWER_WEIGHT
+    ITEM_POWER_BRACER 
+    ITEM_POWER_BELT
+    ITEM_POWER_LENS 
+    ITEM_POWER_BAND 
+    ITEM_POWER_ANKLET
+}
+
+mart LittlerootTown_DevHouse_HeartScale_Mart{
+    ITEM_HEART_SCALE
 }
