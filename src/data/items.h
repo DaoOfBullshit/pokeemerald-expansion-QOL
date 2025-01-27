@@ -2144,7 +2144,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Repel"),
         .price = (I_PRICE >= GEN_7) ? 400 : 350,
-        .holdEffectParam = 100,
+        .holdEffectParam = 100*2,
         .description = COMPOUND_STRING(
             "Repels weak wild\n"
             "Pokémon for 100\n"
@@ -2161,7 +2161,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Super Repel"),
         .price = (I_PRICE >= GEN_7) ? 700 : 500,
-        .holdEffectParam = 200,
+        .holdEffectParam = 200*2,
         .description = COMPOUND_STRING(
             "Repels weak wild\n"
             "Pokémon for 200\n"
@@ -2178,7 +2178,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Max Repel"),
         .price = (I_PRICE >= GEN_7) ? 900 : 700,
-        .holdEffectParam = 250,
+        .holdEffectParam = 250*2,
         .description = COMPOUND_STRING(
             "Repels weak wild\n"
             "Pokémon for 250\n"
